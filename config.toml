@@ -1,31 +1,42 @@
-baseURL = "https://workshop-sample.awsfcaj.com/"
-relativeURLs = false
-canonifyURLs = false
-defaultContentLanguage = "en"
+baseURL = "https://duck1702.github.io/FCAJ---Workshop--aws/"
 
-# Change the default theme to be use when building the site with Hugo
+relativeURLs = false
+
+canonifyURLs = false
+
+defaultContentLanguage = "vi"
+
 theme = "hugo-theme-learn"
 
-# For search functionality
 [outputs]
+
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "workshop"
-  # Git hub repo link
-  editURL = ""
-  description = ""
-  author = "thienlh@thienlu.com"
-  showVisitedLinks = true
-  disableBreadcrumb = false
-  disableNextPrev = false
-  
+
+ themeVariant = "workshop"
+
+ editURL = "https://github.com/Duck1702/FCAJ---Workshop--aws/edit/main/content/"
+
+ description = "Internship report and AWS workshop project for Serverless Personal Finance API & Monitoring System on AWS"
+
+ author = "Nguyen Viet Duc"
+
+ showVisitedLinks = true
+
+ disableBreadcrumb = false
+
+ disableNextPrev = false
+
 [Languages]
+
 [Languages.en]
-title = "Internship Report"
+
+title = "Serverless Personal Finance API & Monitoring System on AWS"
+
 weight = 1
-languageName = "English"
+
+label = "English"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -40,14 +51,17 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [Languages.vi]
-title = "Báo cáo thực tập"
+
+title = "Hệ thống API quản lý tài chính cá nhân và giám sát trên AWS"
+
 weight = 2
-languageName = "Tiếng Việt"
+
+label = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
 identifier = "AWS Study Group"
-url = "http://awsstudygroup.com"
+url = "https://awsstudygroup.com"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
@@ -57,6 +71,9 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
+ [markup.goldmark]
+
+ [markup.goldmark.renderer]
+
+ unsafe = true
