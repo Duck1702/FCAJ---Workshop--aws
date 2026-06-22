@@ -10,50 +10,68 @@ chapter: false
 
 ## 1. Tên dự án
 
-**Hệ thống API quản lý tài chính cá nhân và giám sát trên AWS**
+**Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS**
 
-Tên tiếng Anh: **Serverless Personal Finance API & Monitoring System on AWS**
+Tên tiếng Anh: **AI-Powered Personal Finance Budget Alert System on AWS**
 
 ## 2. Tổng quan dự án
 
-Dự án xây dựng một hệ thống API quản lý tài chính cá nhân sử dụng kiến trúc serverless trên Amazon Web Services. Hệ thống cho phép người dùng quản lý các giao dịch thu chi, phân loại giao dịch, theo dõi ngân sách cá nhân và nhận cảnh báo khi tổng chi tiêu vượt quá giới hạn đã thiết lập.
+Dự án xây dựng một hệ thống quản lý tài chính cá nhân sử dụng kiến trúc serverless trên Amazon Web Services. Hệ thống cho phép người dùng quản lý giao dịch thu chi, thiết lập ngân sách cá nhân, nhận cảnh báo khi chi tiêu vượt quá ngân sách và sử dụng AI để gợi ý danh mục giao dịch cũng như tạo nhận xét chi tiêu theo tháng.
 
-Project được triển khai theo hướng cloud-native, tận dụng các dịch vụ AWS như Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon Cognito, Amazon CloudWatch và Amazon SNS. Mục tiêu của dự án là xây dựng một hệ thống có khả năng mở rộng, chi phí thấp, dễ triển khai, dễ giám sát và phù hợp với một use case thực tế.
+Project được triển khai bằng các dịch vụ AWS như Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon SNS, Amazon CloudWatch, Amazon Bedrock và AWS IAM. Mục tiêu của dự án là xây dựng một hệ thống cloud-native có tính thực tế, chi phí thấp, dễ mở rộng, có khả năng giám sát và có yếu tố AI hỗ trợ người dùng ra quyết định tài chính tốt hơn.
 
-## 3. Lý do chọn đề tài
+## 3. Mục đích dự án
 
-Quản lý tài chính cá nhân là nhu cầu phổ biến trong đời sống hằng ngày. Tuy nhiên, nhiều người dùng vẫn gặp khó khăn trong việc theo dõi chi tiêu, phân loại giao dịch và kiểm soát ngân sách. Bên cạnh đó, khi xây dựng một hệ thống backend truyền thống, người phát triển thường phải quản lý máy chủ, cấu hình môi trường, theo dõi lỗi và tối ưu chi phí vận hành.
+Mục đích chính của dự án là hỗ trợ người dùng theo dõi và kiểm soát tài chính cá nhân một cách chủ động. Thay vì chỉ ghi nhận giao dịch, hệ thống còn giúp người dùng nhận biết khi chi tiêu vượt quá ngân sách và cung cấp phân tích AI để hiểu rõ hơn về hành vi chi tiêu.
 
-Vì vậy, dự án lựa chọn kiến trúc serverless trên AWS nhằm giảm bớt công việc quản trị hạ tầng, tối ưu chi phí và tăng khả năng mở rộng. Thông qua project này, sinh viên có thể thực hành các dịch vụ AWS quan trọng, hiểu rõ cách thiết kế một hệ thống cloud-native và xây dựng tài liệu workshop theo quy trình triển khai thực tế.
+Về mặt kỹ thuật, dự án giúp thực hành triển khai một hệ thống serverless hoàn chỉnh trên AWS, bao gồm xác thực người dùng, xây dựng REST API, xử lý nghiệp vụ bằng Lambda, lưu trữ dữ liệu NoSQL, gửi thông báo qua email, giám sát hệ thống bằng CloudWatch và tích hợp AI thông qua Amazon Bedrock.
 
-## 4. Vấn đề cần giải quyết
+## 4. Đối tượng sử dụng
 
-Dự án tập trung giải quyết các vấn đề sau:
+Hệ thống hướng đến các nhóm người dùng sau:
 
-* Người dùng cần một hệ thống để lưu trữ và quản lý giao dịch tài chính cá nhân.
-* Dữ liệu giao dịch cần được lưu trữ an toàn, có thể truy vấn nhanh và dễ mở rộng.
-* API cần có cơ chế xác thực để bảo vệ dữ liệu người dùng.
-* Hệ thống cần có log và metric để theo dõi hoạt động.
-* Cần có cảnh báo khi chi tiêu vượt quá ngân sách.
-* Cần hạn chế chi phí vận hành bằng cách sử dụng mô hình serverless.
-* Cần có tài liệu hướng dẫn chi tiết để người khác có thể triển khai lại project.
+* Sinh viên muốn theo dõi chi tiêu hằng tháng.
+* Người đi làm muốn kiểm soát thu nhập và chi phí cá nhân.
+* Người dùng cá nhân muốn nhận cảnh báo khi chi tiêu vượt ngân sách.
+* Người muốn có phân tích AI đơn giản về tình hình chi tiêu.
+* Người học AWS muốn thực hành xây dựng một ứng dụng serverless có xác thực, API, database, notification, monitoring và AI.
 
-## 5. Mục tiêu dự án
+## 5. Vấn đề cần giải quyết
 
-Dự án hướng đến các mục tiêu chính sau:
+Trong thực tế, nhiều người dùng thường không theo dõi chi tiêu thường xuyên, không phân loại giao dịch rõ ràng và không biết thời điểm chi tiêu đã vượt quá ngân sách. Điều này có thể dẫn đến mất kiểm soát tài chính cá nhân.
 
-* Xây dựng REST API cho chức năng quản lý giao dịch tài chính cá nhân.
-* Cho phép người dùng thêm, xem, cập nhật và xóa giao dịch.
-* Lưu trữ dữ liệu giao dịch bằng Amazon DynamoDB.
+Ngoài ra, các hệ thống truyền thống thường cần máy chủ, cơ sở dữ liệu quan hệ và chi phí vận hành cố định. Với phạm vi project học tập, việc sử dụng kiến trúc serverless giúp giảm chi phí, giảm công việc vận hành hạ tầng và vẫn đảm bảo khả năng mở rộng.
+
+Dự án giải quyết các vấn đề chính:
+
+* Quản lý giao dịch thu chi cá nhân.
+* Thiết lập và theo dõi ngân sách.
+* Cảnh báo khi chi tiêu vượt ngân sách.
+* Gợi ý danh mục giao dịch bằng AI.
+* Tạo nhận xét chi tiêu bằng AI.
+* Ghi log, giám sát lỗi và kiểm soát chi phí triển khai.
+
+## 6. Mục tiêu dự án
+
+Dự án hướng đến các mục tiêu sau:
+
+* Xây dựng REST API cho hệ thống quản lý tài chính cá nhân.
+* Cho phép người dùng tạo, xem, cập nhật và xóa giao dịch.
+* Cho phép người dùng thiết lập ngân sách theo tháng.
+* Tự động tính tổng chi tiêu và so sánh với ngân sách.
+* Gửi email cảnh báo khi tổng chi tiêu vượt ngân sách.
+* Sử dụng AI để gợi ý danh mục giao dịch từ mô tả giao dịch.
+* Sử dụng AI để tạo nhận xét chi tiêu theo tháng.
 * Xác thực người dùng bằng Amazon Cognito.
-* Xử lý logic nghiệp vụ bằng AWS Lambda.
+* Lưu trữ dữ liệu bằng Amazon DynamoDB.
+* Xử lý nghiệp vụ bằng AWS Lambda.
 * Công khai API thông qua Amazon API Gateway.
-* Ghi log, theo dõi metric và tạo cảnh báo bằng Amazon CloudWatch.
-* Gửi email cảnh báo bằng Amazon SNS khi chi tiêu vượt ngân sách.
-* Xây dựng tài liệu workshop song ngữ hướng dẫn triển khai hệ thống từng bước.
-* Thực hiện kiểm thử API và cleanup resource sau khi hoàn thành để tránh phát sinh chi phí.
+* Ghi log và theo dõi hệ thống bằng Amazon CloudWatch.
+* Phân quyền bằng AWS IAM theo nguyên tắc least privilege.
+* Kiểm soát chi phí trong phạm vi tối đa 200 USD cho toàn bộ thời gian triển khai.
+* Viết tài liệu workshop song ngữ hướng dẫn triển khai từng bước.
 
-## 6. Phạm vi dự án
+## 7. Phạm vi dự án
 
 Trong phạm vi project, hệ thống tập trung vào các chức năng chính:
 
@@ -62,48 +80,58 @@ Trong phạm vi project, hệ thống tập trung vào các chức năng chính:
 * Xem danh sách giao dịch.
 * Cập nhật thông tin giao dịch.
 * Xóa giao dịch.
-* Lưu trữ dữ liệu giao dịch theo từng người dùng.
-* Thiết lập giới hạn ngân sách.
-* Gửi cảnh báo khi tổng chi tiêu vượt quá ngân sách.
-* Theo dõi log và metric của hệ thống.
+* Thiết lập ngân sách tháng.
+* Kiểm tra tổng chi tiêu so với ngân sách.
+* Gửi email cảnh báo khi vượt ngân sách.
+* AI gợi ý danh mục giao dịch.
+* AI tạo nhận xét chi tiêu.
+* Ghi log và giám sát hệ thống.
+* Kiểm thử API bằng Postman.
 
-Project không tập trung xây dựng giao diện người dùng hoàn chỉnh, mà ưu tiên vào phần backend, kiến trúc AWS, khả năng giám sát, kiểm thử và tài liệu workshop.
+Project không tập trung xây dựng giao diện người dùng hoàn chỉnh. Việc kiểm thử và demo có thể được thực hiện bằng Postman, AWS Console và email cảnh báo thực tế.
 
-## 7. Các dịch vụ AWS sử dụng
+## 8. Các dịch vụ AWS sử dụng
 
-Các dịch vụ AWS dự kiến sử dụng trong project gồm:
+Các dịch vụ AWS dự kiến sử dụng gồm:
 
-* **Amazon API Gateway:** tạo REST API để client hoặc Postman gửi request đến backend.
-* **AWS Lambda:** xử lý logic nghiệp vụ như thêm, sửa, xóa và truy vấn giao dịch.
-* **Amazon DynamoDB:** lưu trữ dữ liệu giao dịch tài chính.
 * **Amazon Cognito:** quản lý đăng ký, đăng nhập và xác thực người dùng.
-* **Amazon CloudWatch:** theo dõi log, metric, lỗi và trạng thái hoạt động của hệ thống.
+* **Amazon API Gateway:** tạo REST API endpoint để người dùng hoặc Postman gọi đến hệ thống.
+* **AWS Lambda:** xử lý logic nghiệp vụ cho giao dịch, ngân sách, cảnh báo và AI.
+* **Amazon DynamoDB:** lưu trữ giao dịch, ngân sách và lịch sử cảnh báo.
 * **Amazon SNS:** gửi email cảnh báo khi chi tiêu vượt ngân sách.
-* **AWS IAM:** phân quyền cho Lambda truy cập đúng tài nguyên cần thiết.
+* **Amazon CloudWatch:** ghi log, theo dõi metric và hỗ trợ giám sát lỗi.
+* **Amazon Bedrock:** hỗ trợ AI gợi ý danh mục giao dịch và tạo nhận xét chi tiêu.
+* **AWS IAM:** quản lý quyền truy cập giữa Lambda và các dịch vụ AWS.
+* **AWS Budgets:** theo dõi chi phí và cảnh báo khi chi phí vượt ngưỡng.
 
-## 8. Kiến trúc giải pháp
+## 9. Kiến trúc giải pháp
 
-Luồng hoạt động chính của hệ thống như sau:
+Hình dưới đây mô tả kiến trúc tổng quát của hệ thống:
 
-Người dùng đăng ký và đăng nhập thông qua Amazon Cognito. Sau khi xác thực thành công, người dùng nhận được token để gọi API. Request từ người dùng được gửi đến Amazon API Gateway. API Gateway kiểm tra xác thực và chuyển request đến AWS Lambda. Lambda xử lý logic nghiệp vụ, sau đó đọc hoặc ghi dữ liệu vào Amazon DynamoDB. Trong quá trình xử lý, log và metric được ghi lại trên Amazon CloudWatch. Khi tổng chi tiêu vượt quá giới hạn ngân sách, Lambda gửi thông báo đến Amazon SNS để gửi email cảnh báo cho người dùng.
+![Kiến trúc tổng quát của hệ thống](/FCAJ---Workshop--aws/images/2-Proposal/architecture-overview_vie.png)
 
-Kiến trúc tổng quát:
+Luồng hoạt động chính của hệ thống:
 
-![Kiến trúc tổng quát của hệ thống](/FCAJ---Workshop--aws/images/2-Proposal/architecture-overview_vi.png)
+1. Người dùng đăng ký hoặc đăng nhập thông qua Amazon Cognito.
+2. Sau khi đăng nhập thành công, người dùng nhận được JWT token.
+3. Người dùng gửi request đến Amazon API Gateway kèm token xác thực.
+4. API Gateway chuyển request hợp lệ đến AWS Lambda.
+5. Lambda xử lý các logic giao dịch, ngân sách và AI.
+6. Lambda đọc và ghi dữ liệu vào Amazon DynamoDB.
+7. Khi người dùng nhập mô tả giao dịch, Lambda có thể gọi Amazon Bedrock để gợi ý danh mục.
+8. Khi người dùng yêu cầu phân tích chi tiêu, Lambda tổng hợp dữ liệu và gọi Amazon Bedrock để tạo insight.
+9. Nếu tổng chi tiêu vượt ngân sách, Lambda gửi thông báo đến Amazon SNS.
+10. Amazon SNS gửi email cảnh báo đến người dùng.
+11. Amazon CloudWatch ghi log, metric và hỗ trợ giám sát lỗi.
+12. AWS IAM Role cấp quyền cần thiết cho Lambda để truy cập DynamoDB, SNS, CloudWatch và Bedrock.
 
-Luồng chính của hệ thống:
-1. Người dùng đăng nhập qua Amazon Cognito.
-2. Người dùng gọi API thông qua Amazon API Gateway.
-3. API Gateway chuyển request đến AWS Lambda.
-4. Lambda xử lý nghiệp vụ và lưu dữ liệu vào DynamoDB.
-5. CloudWatch dùng để ghi log và giám sát hệ thống.
-6. Khi chi tiêu vượt ngưỡng, SNS gửi email cảnh báo.
+## 10. Mô hình dữ liệu dự kiến
 
-## 9. Mô hình dữ liệu dự kiến
+Hệ thống dự kiến sử dụng ba bảng DynamoDB chính.
 
-Bảng DynamoDB dự kiến: **Transactions**
+### Bảng Transactions
 
-Các thuộc tính chính:
+Lưu thông tin giao dịch thu chi.
 
 ```text
 userId
@@ -111,7 +139,7 @@ transactionId
 type
 category
 amount
-note
+description
 createdAt
 updatedAt
 ```
@@ -121,85 +149,199 @@ updatedAt
 * **userId:** định danh người dùng.
 * **transactionId:** định danh giao dịch.
 * **type:** loại giao dịch, gồm income hoặc expense.
-* **category:** danh mục giao dịch, ví dụ food, transport, salary, shopping.
+* **category:** danh mục giao dịch.
 * **amount:** số tiền giao dịch.
-* **note:** ghi chú giao dịch.
+* **description:** mô tả giao dịch.
 * **createdAt:** thời gian tạo giao dịch.
 * **updatedAt:** thời gian cập nhật giao dịch.
 
-## 10. Kế hoạch triển khai
+### Bảng Budgets
 
-Dự án được triển khai theo 12 tuần:
+Lưu ngân sách theo tháng của người dùng.
 
-| Tuần    | Công việc dự kiến                                                  |
-| ------- | ------------------------------------------------------------------ |
-| Tuần 1  | Tìm hiểu yêu cầu, chọn đề tài và chuẩn bị repository workshop      |
-| Tuần 2  | Viết proposal và xác định các dịch vụ AWS sử dụng                  |
-| Tuần 3  | Thiết kế kiến trúc hệ thống và mô hình dữ liệu                     |
-| Tuần 4  | Tạo DynamoDB table và cấu hình IAM role                            |
-| Tuần 5  | Xây dựng Lambda function cho chức năng tạo giao dịch               |
-| Tuần 6  | Xây dựng các API còn lại và tích hợp API Gateway                   |
-| Tuần 7  | Cấu hình Amazon Cognito để xác thực người dùng                     |
-| Tuần 8  | Kiểm thử API bằng Postman                                          |
-| Tuần 9  | Cấu hình CloudWatch Logs, Metrics và Alarm                         |
-| Tuần 10 | Cấu hình Amazon SNS để gửi cảnh báo                                |
-| Tuần 11 | Hoàn thiện tài liệu workshop và thêm hình ảnh minh họa             |
-| Tuần 12 | Kiểm tra, tối ưu chi phí, viết self-evaluation và cleanup resource |
+```text
+userId
+month
+budgetLimit
+currentExpense
+updatedAt
+```
 
-## 11. Kiểm thử và đánh giá
+Ý nghĩa:
 
-Dự án sẽ được kiểm thử bằng Postman và AWS Console. Một số test case dự kiến gồm:
+* **userId:** định danh người dùng.
+* **month:** tháng áp dụng ngân sách.
+* **budgetLimit:** giới hạn ngân sách.
+* **currentExpense:** tổng chi tiêu hiện tại.
+* **updatedAt:** thời gian cập nhật gần nhất.
 
-* Gọi API tạo giao dịch thành công.
-* Gọi API lấy danh sách giao dịch.
-* Gọi API cập nhật giao dịch.
-* Gọi API xóa giao dịch.
-* Gọi API khi thiếu token xác thực.
-* Gọi API với dữ liệu không hợp lệ.
-* Kiểm tra dữ liệu được lưu trong DynamoDB.
-* Kiểm tra log Lambda trong CloudWatch.
-* Kiểm tra cảnh báo khi chi tiêu vượt ngân sách.
-* Kiểm tra email cảnh báo được gửi qua Amazon SNS.
+### Bảng AlertEvents
 
-## 12. Kết quả mong đợi
+Lưu lịch sử cảnh báo vượt ngân sách.
+
+```text
+alertId
+userId
+month
+budgetLimit
+currentExpense
+status
+createdAt
+```
+
+Ý nghĩa:
+
+* **alertId:** định danh cảnh báo.
+* **userId:** định danh người dùng.
+* **month:** tháng phát sinh cảnh báo.
+* **budgetLimit:** ngân sách đã thiết lập.
+* **currentExpense:** tổng chi tiêu tại thời điểm cảnh báo.
+* **status:** trạng thái gửi cảnh báo, ví dụ SENT hoặc FAILED.
+* **createdAt:** thời gian tạo cảnh báo.
+
+## 11. API dự kiến
+
+Các API chính của hệ thống gồm:
+
+| Method | Endpoint           | Chức năng                   |
+| ------ | ------------------ | --------------------------- |
+| POST   | /transactions      | Tạo giao dịch mới           |
+| GET    | /transactions      | Lấy danh sách giao dịch     |
+| GET    | /transactions/{id} | Xem chi tiết giao dịch      |
+| PUT    | /transactions/{id} | Cập nhật giao dịch          |
+| DELETE | /transactions/{id} | Xóa giao dịch               |
+| POST   | /budgets           | Thiết lập ngân sách         |
+| GET    | /budgets           | Xem ngân sách hiện tại      |
+| POST   | /budgets/check     | Kiểm tra vượt ngân sách     |
+| POST   | /ai/categorize     | AI gợi ý danh mục giao dịch |
+| GET    | /ai/insights       | AI tạo nhận xét chi tiêu    |
+
+## 12. Tính năng AI
+
+Dự án sử dụng AI cho hai chức năng chính.
+
+### 12.1. AI gợi ý danh mục giao dịch
+
+Khi người dùng nhập mô tả giao dịch, hệ thống có thể sử dụng AI để gợi ý danh mục phù hợp.
+
+Ví dụ:
+
+```text
+Mô tả: "ăn trưa cơm gà"
+Danh mục gợi ý: Food
+
+Mô tả: "đổ xăng xe máy"
+Danh mục gợi ý: Transport
+
+Mô tả: "lương tháng 6"
+Danh mục gợi ý: Salary
+```
+
+### 12.2. AI tạo nhận xét chi tiêu
+
+Dựa trên dữ liệu giao dịch và ngân sách, hệ thống tạo nhận xét ngắn gọn cho người dùng.
+
+Ví dụ:
+
+```text
+Tháng này bạn chi tiêu nhiều nhất cho Food và Shopping.
+Chi tiêu hiện tại đã vượt 12% so với ngân sách.
+Bạn nên giảm chi tiêu không cần thiết trong tuần tiếp theo.
+```
+
+## 13. Kiểm thử và đánh giá
+
+Hệ thống sẽ được kiểm thử bằng Postman và AWS Console. Các test case dự kiến gồm:
+
+* Đăng nhập và lấy token từ Amazon Cognito.
+* Gọi API khi có token hợp lệ.
+* Gọi API khi không có token.
+* Tạo giao dịch thu hoặc chi.
+* Lấy danh sách giao dịch.
+* Cập nhật giao dịch.
+* Xóa giao dịch.
+* Thiết lập ngân sách.
+* Tạo nhiều giao dịch chi tiêu để vượt ngân sách.
+* Kiểm tra email cảnh báo từ Amazon SNS.
+* Gọi API AI gợi ý danh mục.
+* Gọi API AI tạo nhận xét chi tiêu.
+* Kiểm tra dữ liệu lưu trong DynamoDB.
+* Kiểm tra log trong CloudWatch.
+* Kiểm tra phản hồi lỗi khi dữ liệu đầu vào không hợp lệ.
+
+## 14. Kết quả mong đợi
 
 Sau khi hoàn thành, project sẽ đạt được các kết quả sau:
 
 * Một hệ thống REST API serverless hoạt động trên AWS.
-* Người dùng có thể quản lý giao dịch tài chính cá nhân.
-* Dữ liệu được lưu trữ trong Amazon DynamoDB.
+* Người dùng có thể quản lý giao dịch thu chi cá nhân.
+* Người dùng có thể thiết lập ngân sách và nhận cảnh báo khi vượt ngân sách.
+* Hệ thống có AI gợi ý danh mục giao dịch.
+* Hệ thống có AI tạo nhận xét chi tiêu theo tháng.
+* Dữ liệu được lưu trữ trong DynamoDB.
 * API được bảo vệ bằng Amazon Cognito.
-* Hệ thống có log, metric và alarm thông qua Amazon CloudWatch.
-* Có chức năng gửi email cảnh báo bằng Amazon SNS.
+* Email cảnh báo được gửi thông qua Amazon SNS.
+* CloudWatch ghi nhận log và hỗ trợ giám sát hệ thống.
 * Có tài liệu workshop song ngữ hướng dẫn triển khai từng bước.
+* Có ảnh chụp minh chứng các dịch vụ AWS, kết quả test API, log và email cảnh báo.
 * Có phần cleanup để xóa tài nguyên AWS sau khi hoàn thành.
 
-## 13. Rủi ro và hướng xử lý
+## 15. Rủi ro và hướng xử lý
 
 Một số rủi ro có thể gặp trong quá trình triển khai:
 
-* Cấu hình IAM sai quyền làm Lambda không thể truy cập DynamoDB.
+* Cấu hình IAM chưa đúng làm Lambda không thể truy cập DynamoDB, SNS hoặc Bedrock.
 * API Gateway chưa tích hợp đúng với Lambda.
 * Cognito token không hợp lệ khi test API.
-* CloudWatch Alarm chưa kích hoạt đúng điều kiện.
-* Dữ liệu đầu vào không đúng định dạng.
-* Phát sinh chi phí nếu không xóa resource sau khi demo.
+* Logic tính tổng chi tiêu chưa chính xác.
+* SNS email subscription chưa được xác nhận.
+* Chi phí AI tăng nếu gọi Bedrock quá nhiều lần.
+* CloudWatch Logs phát sinh chi phí nếu lưu log quá lâu.
+* Phát sinh chi phí nếu không cleanup tài nguyên sau khi demo.
 
 Hướng xử lý:
 
 * Kiểm tra CloudWatch Logs để debug lỗi Lambda.
-* Phân quyền IAM theo nguyên tắc least privilege.
-* Test từng API riêng bằng Postman.
-* Kiểm tra cấu hình Cognito Authorizer trong API Gateway.
-* Tạo AWS Budget hoặc theo dõi Billing Dashboard.
-* Thực hiện cleanup toàn bộ resource sau khi hoàn thành project.
+* Cấu hình IAM theo nguyên tắc least privilege.
+* Test từng API bằng Postman trước khi test toàn bộ luồng.
+* Xác nhận email SNS trước khi test cảnh báo.
+* Giới hạn số lần gọi AI trong quá trình demo.
+* Thiết lập CloudWatch log retention 7 hoặc 14 ngày.
+* Tạo AWS Budget để theo dõi chi phí.
+* Cleanup toàn bộ tài nguyên sau khi hoàn thành project.
 
-## 14. Ước tính chi phí
+## 16. Ước tính chi phí
 
-Project sử dụng chủ yếu các dịch vụ serverless nên chi phí dự kiến thấp. Với quy mô demo và số lượng request nhỏ, các dịch vụ như AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon CloudWatch và Amazon SNS có thể được sử dụng trong giới hạn miễn phí hoặc phát sinh chi phí rất thấp.
+Project sử dụng chủ yếu các dịch vụ serverless và pay-as-you-go nên chi phí dự kiến thấp. Mục tiêu chi phí tối đa cho toàn bộ quá trình triển khai trong khoảng 3 tháng là **200 USD**.
 
-Sau khi hoàn thành demo, toàn bộ tài nguyên không cần thiết sẽ được xóa để tránh phát sinh chi phí ngoài ý muốn.
+Kế hoạch kiểm soát chi phí:
 
-## 15. Kết luận
+* Sử dụng Lambda, API Gateway và DynamoDB ở quy mô demo.
+* Chỉ gọi Amazon Bedrock khi cần phân loại hoặc tạo insight.
+* Không sử dụng RDS, ECS, NAT Gateway hoặc Load Balancer.
+* Đặt AWS Budget khoảng 60 USD/tháng.
+* Cấu hình cảnh báo chi phí ở mức 50%, 80% và 100%.
+* Cleanup toàn bộ resource sau khi hoàn thành.
 
-Dự án “Hệ thống API quản lý tài chính cá nhân và giám sát trên AWS” giúp sinh viên thực hành xây dựng một hệ thống backend serverless hoàn chỉnh trên AWS. Project không chỉ tập trung vào việc tạo API mà còn chú trọng đến bảo mật, giám sát, cảnh báo, kiểm thử, tối ưu chi phí và cleanup tài nguyên. Đây là một use case thực tế, phù hợp với mục tiêu học tập và yêu cầu của chương trình First Cloud AI Journey.
+## 17. Lộ trình triển khai
+
+Dự án được triển khai theo 12 tuần như sau:
+
+| Tuần    | Nội dung triển khai                            | Kết quả mong đợi                                     |
+| ------- | ---------------------------------------------- | ---------------------------------------------------- |
+| Tuần 1  | Phân tích yêu cầu và xác định phạm vi dự án    | Hoàn thành scope và mục tiêu dự án                   |
+| Tuần 2  | Thiết kế kiến trúc AWS, API và data model      | Có sơ đồ kiến trúc, API list và data model           |
+| Tuần 3  | Tạo repo code và cấu trúc project              | Có cấu trúc source code ban đầu                      |
+| Tuần 4  | Cấu hình Amazon Cognito                        | Người dùng có thể đăng ký, đăng nhập và lấy token    |
+| Tuần 5  | Tạo DynamoDB tables và IAM Role                | Có bảng Transactions, Budgets, AlertEvents           |
+| Tuần 6  | Xây dựng Lambda và API cho giao dịch           | API giao dịch hoạt động                              |
+| Tuần 7  | Xây dựng Lambda và API cho ngân sách           | API ngân sách hoạt động                              |
+| Tuần 8  | Tích hợp SNS và cảnh báo vượt ngân sách        | Email cảnh báo được gửi thành công                   |
+| Tuần 9  | Tích hợp Amazon Bedrock cho AI                 | AI gợi ý danh mục và tạo insight                     |
+| Tuần 10 | Cấu hình CloudWatch Logs, Metrics và Alarm     | Có log và metric giám sát                            |
+| Tuần 11 | Kiểm thử toàn bộ hệ thống bằng Postman         | Có test case, kết quả test và ảnh minh chứng         |
+| Tuần 12 | Hoàn thiện workshop, cleanup và tối ưu chi phí | Hoàn thành báo cáo và xóa tài nguyên không cần thiết |
+
+## 18. Kết luận
+
+Dự án “Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS” là một use case thực tế, phù hợp để thực hành các dịch vụ AWS serverless. Project không chỉ xây dựng API quản lý tài chính mà còn kết hợp xác thực, lưu trữ dữ liệu, cảnh báo qua email, giám sát hệ thống và AI hỗ trợ phân tích chi tiêu. Đây là hướng triển khai phù hợp với mục tiêu học tập, yêu cầu project và giới hạn chi phí trong khoảng 3 tháng.
