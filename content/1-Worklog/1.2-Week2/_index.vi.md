@@ -1,59 +1,73 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
+date: 2026-06-22
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Tuần 2: Hoàn thiện Proposal, cấu trúc website và học Module 2
 
-### Mục tiêu tuần 2:
+## Các công việc cần triển khai trong tuần này
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                        |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------- |
+| 2   | - Chốt ý tưởng project: AI-Powered Personal Finance Budget Alert System on AWS.<br>- Xác định phạm vi chính của hệ thống: quản lý giao dịch, ngân sách, cảnh báo vượt ngân sách và phân tích AI.<br>- Xác định các dịch vụ AWS dự kiến sử dụng như Cognito, API Gateway, Lambda, DynamoDB, SNS, CloudWatch, Bedrock, IAM và AWS Budgets. | 22/06/2026   | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
+| 3   | - Hoàn thiện nội dung Proposal tiếng Việt và tiếng Anh.<br>- Thêm ảnh kiến trúc tổng quan của hệ thống vào phần Proposal.<br>- Sửa lỗi menu, header và sidebar cho website báo cáo.<br>- Chuẩn hóa cấu trúc song ngữ cho các mục tiếng Việt và tiếng Anh.                                                                                | 23/06/2026   | 26/06/2026      | Hugo Documentation, GitHub Repository |
+| 4   | - Tạo README.md cho repository để mô tả project trên GitHub.<br>- Kiểm tra lại kế hoạch kiểm soát chi phí AWS trước khi triển khai tài nguyên.<br>- Hoàn thành nội dung học tập Module 2.<br>- Ghi chú các kiến thức quan trọng trong Module 2.                                                                                          | 24/06/2026   | 26/06/2026      | GitHub, Module 2                      |
+| 5   | - Chuẩn bị nội dung tài liệu kỹ thuật cho project AWS.<br>- Viết các tài liệu ban đầu như requirements, architecture, data model, API endpoints, cost control và cleanup checklist.                                                                                                                                                      | 25/06/2026   | 26/06/2026      | AWS Documentation, Project Repository |
+| 6   | - Chuẩn bị cho giai đoạn triển khai AWS ở tuần tiếp theo.<br>- Xác định thứ tự triển khai các dịch vụ: AWS Budget, IAM, Cognito, DynamoDB, Lambda, API Gateway, SNS, CloudWatch và Bedrock.<br>- Tổng hợp kết quả tuần 2, hoàn thiện Worklog Tuần 2 và lập kế hoạch cho tuần 3.                                                          | 26/06/2026   | 26/06/2026      | AWS Console, GitHub Repository        |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Kết quả đạt được tuần 2
 
+* Đã chốt được ý tưởng và phạm vi chính thức của project.
+* Đã xác định các dịch vụ AWS sẽ sử dụng trong hệ thống.
+* Hoàn thiện Proposal bằng tiếng Việt và tiếng Anh.
+* Thêm ảnh kiến trúc tổng quan vào phần Proposal.
+* Sửa các lỗi giao diện và sidebar của website báo cáo.
+* Chuẩn hóa thêm cấu trúc song ngữ cho website.
+* Tạo README.md để mô tả project trên GitHub.
+* Hoàn thành nội dung học tập Module 2.
+* Chuẩn bị các tài liệu kỹ thuật ban đầu cho project AWS.
+* Xây dựng được kế hoạch triển khai AWS cho tuần tiếp theo.
 
-### Kết quả đạt được tuần 2:
+## Minh chứng tuần 2
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### 1. Proposal đã được cập nhật
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+![Proposal](/FCAJ---Workshop--aws/images/1-Worklog/week2/proposal.png)
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### 2. Website Hugo chạy local
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+![Hugo Local Server](/FCAJ---Workshop--aws/images/1-Worklog/week2/hugo_local.png)
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+### 3. GitHub repository đã được cập nhật
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+![GitHub Repository](/FCAJ---Workshop--aws/images/1-Worklog/week2/github_repo.png)
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### 4. Hoàn thành Module 2
 
+![Module 2](/FCAJ---Workshop--aws/images/1-Worklog/week2/module-2.png)
 
+## Khó khăn gặp phải
+
+* Theme Hugo cũ phát sinh lỗi khi chạy với phiên bản Hugo mới.
+* Sidebar tiếng Anh chưa hiển thị đầy đủ do thiếu một số file `_index.en.md`.
+* Cần kiểm tra kỹ đường dẫn ảnh để ảnh minh chứng hiển thị đúng.
+* Cần chú ý kiểm soát chi phí trước khi triển khai tài nguyên AWS thật.
+
+## Hướng xử lý
+
+* Sửa các file template của Hugo theme để website chạy ổn định hơn.
+* Tạo thêm các file `_index.en.md` cho các mục tiếng Anh còn thiếu.
+* Kiểm tra lại cấu trúc thư mục ảnh trong `static/images`.
+* Chuẩn bị trước tài liệu cost control và cleanup checklist trước khi tạo tài nguyên AWS.
+
+## Kế hoạch tuần tiếp theo
+
+* Bắt đầu triển khai các dịch vụ AWS nền tảng.
+* Cấu hình IAM user và quyền truy cập cần thiết.
+* Tạo Amazon Cognito để quản lý người dùng.
+* Thiết kế và tạo các bảng DynamoDB.
+* Chuẩn bị Lambda functions cho giao dịch và ngân sách.
+* Tiếp tục ghi lại minh chứng triển khai cho phần Workshop.

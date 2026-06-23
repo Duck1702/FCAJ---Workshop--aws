@@ -27,6 +27,7 @@ home = [ "HTML", "RSS", "JSON"]
  disableBreadcrumb = false
 
  disableNextPrev = false
+ disableInlineCopyToClipBoard = true
 
 [Languages]
 

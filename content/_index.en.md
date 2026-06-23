@@ -20,13 +20,13 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS062026
+&emsp; **Class:** FCAJ SGU SS3
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 15/06/2026 to 25/08/2026
+&emsp; **Internship Duration:** From 15/06/2026 to 15/08/2026
 
 ![Your profile picture](/FCAJ---Workshop--aws/images/image_profiles.jpg)
 

@@ -4,9 +4,7 @@ title: "2. Proposal"
 date: 2026-06-15
 weight: 2
 chapter: false
---------------
-
-# Project Proposal
+------------
 
 ## 1. Project Name
 

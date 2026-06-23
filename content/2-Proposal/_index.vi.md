@@ -6,7 +6,6 @@ weight: 2
 chapter: false
 --------------
 
-# Bản đề xuất dự án
 
 ## 1. Tên dự án
 

@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-06-19
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -16,7 +16,7 @@ pre: " <b> 1.1. </b> "
 | 3   | - Tìm hiểu AWS là gì và các nhóm dịch vụ cơ bản.<br>- Làm quen với các khái niệm: Compute, Storage, Database, Networking, Security, Monitoring.                                   | 16/06/2026   | 19/06/2026      | https://cloudjourney.awsstudygroup.com/ |
 | 4   | - Tạo tài khoản AWS.<br>- Đăng nhập AWS Management Console.<br>- Tìm hiểu sự khác nhau giữa root user và IAM user.<br>- Tìm hiểu Billing, Free Tier và cách kiểm soát chi phí.    | 17/06/2026   | 19/06/2026      | https://ap-southeast-2.console.aws.amazon.com/console/home?region=ap-southeast-2#    |
 | 5   | - Tải và cài đặt Kiro.<br>- Tìm hiểu cách Kiro hỗ trợ lập kế hoạch, viết tài liệu kỹ thuật và hỗ trợ code.<br>- Kiểm tra giới hạn Kiro credits và lập kế hoạch sử dụng tiết kiệm. | 18/06/2026   | 19/06/2026      | https://kiro.dev/docs/          |
-| 6   | - Hoàn thành nội dung học tập Module 1.<br>- Ghi chú các kiến thức nền tảng đã học.<br>- Tổng hợp kết quả tuần 1 và chuẩn bị nội dung cho tuần tiếp theo.                         | 19/06/2026   | 19/06/2026      | https://www.youtube.com/watch?v=Gz56QzLQ_Yo&list=PLahN4TLWtox3TSYFbN1DNX7NZgTVXNj3x                |
+| 6   | - Hoàn thành nội dung học tập Module 1.<br>- Ghi chú các kiến thức nền tảng đã học.<br>- Tổng hợp kết quả tuần 1, hoàn thành worklog tuần 1 và chuẩn bị nội dung cho tuần tiếp theo.                         | 19/06/2026   | 19/06/2026      | https://www.youtube.com/watch?v=Gz56QzLQ_Yo&list=PLahN4TLWtox3TSYFbN1DNX7NZgTVXNj3x                |
 
 ## Kết quả đạt được tuần 1
 
