@@ -1,11 +1,10 @@
 ---
-
 title: "Week 2 Worklog"
 date: 2026-06-22
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
-----------------------
+---
 
 # Week 2: Completing the Proposal, Website Structure, and Module 2
 

@@ -28,6 +28,7 @@ home = [ "HTML", "RSS", "JSON"]
 
  disableNextPrev = false
  disableInlineCopyToClipBoard = true
+ ordersectionsby = "weight"
 
 [Languages]
 
