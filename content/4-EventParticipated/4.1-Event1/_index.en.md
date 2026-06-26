@@ -91,3 +91,5 @@ Through this event, I gained more motivation to continue learning AWS and cloud 
 ![Cloud Architect Event](/FCAJ---Workshop--aws/images/4-Events/event1/cloud-architect-event_1.png)
 
 ![Cloud Architect Event](/FCAJ---Workshop--aws/images/4-Events/event1/cloud-architect-event_2.png)
+
+![Cloud Architect Event](/FCAJ---Workshop--aws/images/4-Events/event1/cloud-architect-event_3.JPG)
