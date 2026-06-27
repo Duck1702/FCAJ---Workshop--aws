@@ -17,3 +17,12 @@ pre: " <b> 4. </b> "
 
 **Role in the event:** Participant
 
+## Event 2: FCAJ Community Day – June 2026
+
+**Event name:** FCAJ Community Day – June 2026
+
+**Time:** June 27, 2026
+
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
+
+**Role in the event:** Participant

@@ -14,3 +14,13 @@ pre: " <b> 4. </b> "
 **Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
 **Vai trò trong sự kiện:** Người tham dự
+
+## Event 2: FCAJ Community Day – June 2026
+
+**Tên sự kiện:** FCAJ Community Day – June 2026
+
+**Thời gian:** Ngày 27/06/2026
+
+**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+**Vai trò trong sự kiện:** Người tham dự
