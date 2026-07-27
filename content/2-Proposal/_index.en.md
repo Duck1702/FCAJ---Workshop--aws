@@ -1,19 +1,14 @@
 ---
 
-title: "2. Proposal"
+title: " Proposal"
 date: 2026-06-22
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 --------------------
 
-# 2. Proposal
-
 ## 1. Project Name
-
-**Vietnamese title:** Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS
-
-**English title:** AI-Powered Personal Finance Budget Alert System on AWS
+ AI-Powered Personal Finance Budget Alert System on AWS
 
 ---
 

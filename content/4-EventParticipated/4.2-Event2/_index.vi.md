@@ -1,13 +1,19 @@
 ---
 title: "Event 2: FCAJ Community Day - Jun 2026"
-date: 2024-01-01
-weight: 1
+date: 2026-06-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
+## Thông tin sự kiện
 
-# FCAJ Community Day – June 2026
+**Tên sự kiện:** FCAJ Community Day - Jun 2026
 
+**Thời gian:** Ngày 27/06/2026
+
+**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+**Vai trò trong sự kiện:** Người tham dự
 ## Mục Đích Của Sự Kiện
 
 Sự kiện **FCAJ Community Day** tập trung chia sẻ các xu hướng mới trong việc ứng dụng **Generative AI** và **Agentic AI** vào môi trường Cloud, DevOps và doanh nghiệp. Thông qua các phiên trình bày, người tham dự có cơ hội hiểu rõ hơn cách AI agent có thể hỗ trợ vận hành hệ thống, tự động hóa quy trình phát triển phần mềm, xây dựng voice agent, tối ưu năng suất làm việc và kết nối an toàn với dữ liệu nội bộ.
@@ -179,23 +185,6 @@ Một chiến lược phù hợp có thể gồm:
 * Áp dụng approval workflow trước khi AI thực hiện hành động quan trọng.
 * Theo dõi hiệu quả bằng các chỉ số như thời gian xử lý, chi phí, độ chính xác và mức độ hài lòng của người dùng.
 * Luôn đảm bảo bảo mật, reliability và cost optimization trong suốt quá trình triển khai.
-
-## Ứng Dụng Vào Công Việc Và Dự Án
-
-Những kiến thức từ sự kiện có thể được áp dụng vào các dự án Cloud và phần mềm thực tế, đặc biệt là dự án **AI-Powered Personal Finance Budget Alert System on AWS**.
-
-Một số hướng ứng dụng gồm:
-
-* Áp dụng tư duy **AgenticOps** để giám sát hệ thống tài chính cá nhân trên AWS.
-* Sử dụng CloudWatch để theo dõi log, metric và cảnh báo lỗi.
-* Tích hợp AI để phân tích hành vi chi tiêu và đề xuất cách tối ưu ngân sách.
-* Sử dụng Amazon Bedrock để xây dựng tính năng AI insight cho người dùng.
-* Thiết kế hệ thống theo hướng bảo mật, phân quyền rõ ràng bằng IAM.
-* Áp dụng kiến trúc serverless với Lambda, API Gateway và DynamoDB để giảm chi phí vận hành.
-* Cân nhắc sử dụng event-driven architecture cho các luồng như thêm giao dịch, kiểm tra ngân sách và gửi cảnh báo.
-* Đảm bảo hệ thống tuân theo 6 trụ cột AWS Well-Architected: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization và Sustainability.
-
-Ngoài ra, các kiến thức về DevOps Agent và AgenticOps cũng giúp tôi có thêm định hướng trong việc xây dựng pipeline CI/CD, monitoring và incident response cho các dự án sau này. Thay vì chỉ triển khai ứng dụng, tôi cần quan tâm nhiều hơn đến khả năng vận hành, quan sát, bảo mật và tối ưu chi phí của hệ thống.
 
 ## Trải Nghiệm Trong Sự Kiện
 

@@ -1,11 +1,20 @@
 ---
 
 title: "Event 2: FCAJ Community Day - Jun 2026"
-date: 2024-01-01
-weight: 1
+date: 2026-07-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ----------------------
+## Event Information
+
+**Event Name:** FCAJ Community Day - June 2026
+
+**Date:** June 27, 2026
+
+**Location:** 26th Floor, Bitexco Financial Tower, 2 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
+
+**Role in the Event:** Attendee
 
 ## Event Objectives
 
@@ -179,22 +188,6 @@ A suitable strategy may include:
 * Measuring effectiveness using metrics such as processing time, cost, accuracy, and user satisfaction.
 * Always ensuring security, reliability, and cost optimization throughout the deployment process.
 
-## Application to My Work and Project
-
-The knowledge from this event can be applied to real Cloud and software projects, especially the **AI-Powered Personal Finance Budget Alert System on AWS**.
-
-Some possible applications include:
-
-* Applying **AgenticOps** thinking to monitor the personal finance system on AWS.
-* Using CloudWatch to monitor logs, metrics, and error alerts.
-* Integrating AI to analyze spending behavior and suggest budget optimization.
-* Using Amazon Bedrock to build AI insight features for users.
-* Designing the system with strong security and clear permissions using IAM.
-* Applying serverless architecture with Lambda, API Gateway, and DynamoDB to reduce operational cost.
-* Considering event-driven architecture for workflows such as adding transactions, checking budgets, and sending alerts.
-* Ensuring that the system follows the six AWS Well-Architected pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
-
-In addition, the knowledge about DevOps Agent and AgenticOps also gives me a clearer direction for building CI/CD pipelines, monitoring, and incident response for future projects. Instead of only deploying applications, I need to pay more attention to operability, observability, security, and cost optimization.
 
 ## Event Experience
 

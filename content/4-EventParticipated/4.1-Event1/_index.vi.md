@@ -7,8 +7,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ----------------------
 
-# Event 1: Cloud Architect
-
 ## Thông tin sự kiện
 
 **Tên sự kiện:** Cloud Architect
@@ -67,12 +65,6 @@ Sự kiện cũng giúp em rèn luyện khả năng làm việc nhóm, trao đ�
 * Làm việc nhóm giúp quá trình phân tích và trả lời câu hỏi hiệu quả hơn.
 * Trong một số tình huống, cần biết quản lý rủi ro thay vì chỉ chọn đáp án theo cảm tính.
 * Kiến thức về cloud architecture rất quan trọng khi triển khai các hệ thống thực tế.
-
-## Áp dụng vào project
-
-Những kiến thức từ sự kiện Cloud Architect có thể áp dụng trực tiếp vào project **AI-Powered Personal Finance Budget Alert System on AWS**. Khi thiết kế hệ thống, em cần chú ý đến việc lựa chọn kiến trúc phù hợp, ưu tiên các dịch vụ serverless để giảm chi phí vận hành và đảm bảo khả năng mở rộng.
-
-Ngoài ra, các nội dung liên quan đến kiểm soát chi phí, bảo mật và thiết kế kiến trúc cũng hỗ trợ em trong việc xây dựng kế hoạch triển khai các dịch vụ như Amazon Cognito, API Gateway, AWS Lambda, DynamoDB, SNS, CloudWatch, Bedrock và AWS Budgets.
 
 ## Trải nghiệm cá nhân
 

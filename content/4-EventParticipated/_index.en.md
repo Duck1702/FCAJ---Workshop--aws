@@ -26,3 +26,13 @@ pre: " <b> 4. </b> "
 **Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
 
 **Role in the event:** Participant
+
+## Event 3: FCAJ x Agentic AI Build Week
+
+**Event name:** FCAJ x Agentic AI Build Week: Show Up. Build. Pitch. WIN!
+
+**Time:** July 25, 2026
+
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
+
+**Role in the event:** Attendee and viewer

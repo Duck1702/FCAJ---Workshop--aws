@@ -68,12 +68,6 @@ The event also helped me improve teamwork, discussion, and decision-making skill
 * In some situations, risk management is necessary instead of choosing answers based only on intuition.
 * Cloud architecture knowledge is very important when implementing real-world systems.
 
-## Applying the Knowledge to the Project
-
-The knowledge gained from the Cloud Architect event can be directly applied to my project, **AI-Powered Personal Finance Budget Alert System on AWS**. When designing the system, I need to pay attention to selecting a suitable architecture, prioritizing serverless services to reduce operational costs and improve scalability.
-
-In addition, the topics related to cost control, security, and architecture design support my plan to implement services such as Amazon Cognito, API Gateway, AWS Lambda, DynamoDB, SNS, CloudWatch, Bedrock, and AWS Budgets.
-
 ## Personal Experience
 
 This was an interesting event because the competition format made learning Cloud more engaging. Instead of only studying theory, I was able to participate in situations that required quick thinking, team discussion, and answering questions within a limited time.

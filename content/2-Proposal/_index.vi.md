@@ -1,6 +1,6 @@
 ---
 
-title: "2. Bản đề xuất"
+title: "Bản đề xuất"
 date: 2026-06-22
 weight: 2
 chapter: false
@@ -8,10 +8,8 @@ pre: " <b> 2. </b> "
 --------------------
 
 ## 1. Tên dự án
+ Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS
 
-**Tên tiếng Việt:** Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS
-
-**Tên tiếng Anh:** AI-Powered Personal Finance Budget Alert System on AWS
 
 ---
 
