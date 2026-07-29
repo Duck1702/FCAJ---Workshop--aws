@@ -238,4 +238,4 @@ Overall, **FCAJ Community Day** provided valuable knowledge about the trend of a
 
 The most important thing I learned is that AI is not only used for content generation or answering questions. It can become a technical assistant that supports DevOps, Cloud operations, Voice Agent development, and secure connection with internal systems. However, to deploy AI effectively in real-world environments, it is necessary to focus on architecture, security, access control, monitoring, cost, and scalability.
 
-This event gave me a clearer direction for my AWS project. I can apply the knowledge I learned to the **AI-Powered Personal Finance Budget Alert System on AWS**, especially in designing AI insights, budget alerts, monitoring, security, and cost optimization based on the AWS Well-Architected Framework pillars.
+This event gave me a clearer direction for **CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS**, especially for grounded AI, monitoring, security, and cost optimization based on the AWS Well-Architected Framework pillars.

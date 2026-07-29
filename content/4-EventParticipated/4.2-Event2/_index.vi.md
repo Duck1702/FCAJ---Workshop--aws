@@ -237,5 +237,5 @@ Tổng thể, sự kiện **FCAJ Community Day** đã cung cấp nhiều kiến 
 
 Điều tôi học được nhiều nhất là AI không chỉ dùng để tạo nội dung hoặc trả lời câu hỏi, mà có thể trở thành một trợ lý kỹ thuật hỗ trợ DevOps, vận hành Cloud, xây dựng voice agent và kết nối với hệ thống nội bộ. Tuy nhiên, để triển khai AI hiệu quả trong môi trường thực tế, cần chú ý đến kiến trúc, bảo mật, phân quyền, monitoring, chi phí và khả năng mở rộng.
 
-Sự kiện này giúp tôi có thêm định hướng rõ ràng khi thực hiện dự án trên AWS. Tôi có thể áp dụng các kiến thức đã học vào dự án **AI-Powered Personal Finance Budget Alert System on AWS**, đặc biệt trong việc thiết kế AI insight, cảnh báo ngân sách, monitoring, bảo mật và tối ưu chi phí theo các trụ cột của AWS Well-Architected Framework.
+Sự kiện này giúp tôi có thêm định hướng rõ ràng cho **CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS**, đặc biệt về grounded AI, monitoring, bảo mật và tối ưu chi phí theo các trụ cột của AWS Well-Architected Framework.
 

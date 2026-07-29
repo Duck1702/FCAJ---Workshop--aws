@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
 
  editURL = "https://github.com/Duck1702/FCAJ---Workshop--aws/edit/main/content/"
 
- description = "Internship report and AWS workshop project for Serverless Personal Finance API & Monitoring System on AWS"
+ description = "Internship report and AWS workshop proposal for CampusMeet, an AI-assisted meeting and collaboration platform on AWS"
 
  author = "Nguyen Viet Duc"
 
@@ -34,7 +34,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages.en]
 
-title = "Serverless Personal Finance API & Monitoring System on AWS"
+title = "CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS"
 
 weight = 1
 
@@ -54,7 +54,7 @@ weight = 20
 
 [Languages.vi]
 
-title = "Hệ thống API quản lý tài chính cá nhân và giám sát trên AWS"
+title = "CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS"
 
 weight = 2
 

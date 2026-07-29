@@ -6,13 +6,13 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Week 2: Completing the Proposal, Website Structure, and Module 2
+# Completing the Proposal, Website Structure, and Module 2
 
 ## Tasks to be completed this week
 
 | Day       | Task                                                                                                                                                                                                                                                                                                                                                                | Start date | Completion date | Reference                             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------------------------------------- |
-| Monday    | - Finalize the project idea: AI-Powered Personal Finance Budget Alert System on AWS.<br>- Define the main system scope: transaction management, budget management, budget overrun alerts, and AI analysis.<br>- Identify the AWS services planned for the system, including Cognito, API Gateway, Lambda, DynamoDB, SNS, CloudWatch, Bedrock, IAM, and AWS Budgets. | 22/06/2026 | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
+| Monday    | - Finalize the project idea: CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS.<br>- Define the main scope: groups, meetings, minutes, tasks, reminders, transcription, and grounded AI.<br>- Identify the target AWS serverless services documented in the proposal. | 22/06/2026 | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
 | Tuesday   | - Complete the Proposal content in both Vietnamese and English.<br>- Add the system architecture overview image to the Proposal section.<br>- Fix menu, header, and sidebar issues on the report website.<br>- Standardize the bilingual structure for Vietnamese and English sections.                                                                             | 23/06/2026 | 26/06/2026      | Hugo Documentation, GitHub Repository |
 | Wednesday | - Create README.md for the repository to describe the project on GitHub.<br>- Review the AWS cost control plan before deploying resources.<br>- Complete the learning content in Module 2.<br>- Take notes on important knowledge from Module 2.                                                                                                                    | 24/06/2026 | 26/06/2026      | GitHub, Module 2                      |
 | Thursday  | - Prepare technical documentation for the AWS project.<br>- Write initial documents such as requirements, architecture, data model, API endpoints, cost control, and cleanup checklist.                                                                                                                                                                             | 25/06/2026 | 26/06/2026      | AWS Documentation, Project Repository |
@@ -69,5 +69,5 @@ pre: " <b> 1.2. </b> "
 * Configure IAM user and required access permissions.
 * Create Amazon Cognito for user management.
 * Design and create DynamoDB tables.
-* Prepare Lambda functions for transactions and budgets.
+* Prepare Lambda functions for groups, meetings, minutes, and tasks.
 * Continue recording implementation evidence for the Workshop section.

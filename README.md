@@ -5,13 +5,15 @@ The report is built using **Hugo** and follows the AWS Study Group workshop temp
 
 ## Project Title
 
-**AI-Powered Personal Finance Budget Alert System on AWS**
+**CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS**
 
-Vietnamese title: **Hệ thống quản lý tài chính cá nhân, phân tích AI và cảnh báo vượt ngân sách trên AWS**
+Vietnamese title: **CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS**
 
 ## Overview
 
-The project focuses on designing and documenting a serverless personal finance management system on AWS. The system allows users to manage transactions, define monthly budgets, analyze spending behavior using AI, and receive alerts when spending exceeds the configured budget.
+The report proposes CampusMeet, a serverless collaboration platform for university teams. It centralizes groups, meetings, minutes, tasks, reminders, consent-based live transcription, and cited AI retrieval across authorized meeting artifacts.
+
+The CampusMeet source repository is the implementation baseline. Some frontend, authentication, API, CI, AWS SAM, and DynamoDB foundations exist, while the full cloud deployment, business repositories, transcription, AI processing, and external integrations remain incomplete or proposed.
 
 The report website includes the project proposal, weekly worklog, blog posts, events, workshop implementation guide, self-evaluation, and final sharing/feedback.
 
@@ -20,14 +22,16 @@ The report website includes the project proposal, weekly worklog, blog posts, ev
 The project is designed with the following AWS services:
 
 * Amazon Cognito
-* Amazon API Gateway
+* Amazon CloudFront and private Amazon S3
+* Amazon API Gateway HTTP API
 * AWS Lambda
-* Amazon DynamoDB
-* Amazon SNS
-* Amazon CloudWatch
-* Amazon Bedrock
-* AWS IAM
+* Amazon DynamoDB on-demand
+* Amazon Transcribe and Amazon Bedrock
+* Amazon EventBridge Scheduler, Amazon SES, and Amazon SQS
+* AWS Systems Manager Parameter Store
+* Amazon CloudWatch and Amazon SNS
 * AWS Budgets
+* GitHub Actions and AWS SAM
 
 ## Report Sections
 

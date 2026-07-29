@@ -6,13 +6,13 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Tuần 2: Hoàn thiện Proposal, cấu trúc website và học Module 2
+# Hoàn thiện Proposal, cấu trúc website và học Module 2
 
 ## Các công việc cần triển khai trong tuần này
 
 | Thứ | Công việc                                                                                                                                                                                                                                                                                                                                | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                        |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------- |
-| 2   | - Chốt ý tưởng project: AI-Powered Personal Finance Budget Alert System on AWS.<br>- Xác định phạm vi chính của hệ thống: quản lý giao dịch, ngân sách, cảnh báo vượt ngân sách và phân tích AI.<br>- Xác định các dịch vụ AWS dự kiến sử dụng như Cognito, API Gateway, Lambda, DynamoDB, SNS, CloudWatch, Bedrock, IAM và AWS Budgets. | 22/06/2026   | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
+| 2   | - Chốt ý tưởng project: CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS.<br>- Xác định phạm vi: group, meeting, minutes, task, reminder, transcription và grounded AI.<br>- Xác định các dịch vụ AWS serverless mục tiêu trong proposal. | 22/06/2026   | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
 | 3   | - Hoàn thiện nội dung Proposal tiếng Việt và tiếng Anh.<br>- Thêm ảnh kiến trúc tổng quan của hệ thống vào phần Proposal.<br>- Sửa lỗi menu, header và sidebar cho website báo cáo.<br>- Chuẩn hóa cấu trúc song ngữ cho các mục tiếng Việt và tiếng Anh.                                                                                | 23/06/2026   | 26/06/2026      | Hugo Documentation, GitHub Repository |
 | 4   | - Tạo README.md cho repository để mô tả project trên GitHub.<br>- Kiểm tra lại kế hoạch kiểm soát chi phí AWS trước khi triển khai tài nguyên.<br>- Hoàn thành nội dung học tập Module 2.<br>- Ghi chú các kiến thức quan trọng trong Module 2.                                                                                          | 24/06/2026   | 26/06/2026      | GitHub, Module 2                      |
 | 5   | - Chuẩn bị nội dung tài liệu kỹ thuật cho project AWS.<br>- Viết các tài liệu ban đầu như requirements, architecture, data model, API endpoints, cost control và cleanup checklist.                                                                                                                                                      | 25/06/2026   | 26/06/2026      | AWS Documentation, Project Repository |
