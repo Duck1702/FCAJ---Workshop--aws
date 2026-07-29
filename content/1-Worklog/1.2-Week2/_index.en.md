@@ -6,68 +6,53 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Completing the Proposal, Website Structure, and Module 2
+# WEEK 2: BUILDING THE AWS FOUNDATION AND CAMPUSMEET PROJECT STRUCTURE
 
 ## Tasks to be completed this week
 
-| Day       | Task                                                                                                                                                                                                                                                                                                                                                                | Start date | Completion date | Reference                             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------------------------------------- |
-| Monday    | - Finalize the project idea: CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS.<br>- Define the main scope: groups, meetings, minutes, tasks, reminders, transcription, and grounded AI.<br>- Identify the target AWS serverless services documented in the proposal. | 22/06/2026 | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
-| Tuesday   | - Complete the Proposal content in both Vietnamese and English.<br>- Add the system architecture overview image to the Proposal section.<br>- Fix menu, header, and sidebar issues on the report website.<br>- Standardize the bilingual structure for Vietnamese and English sections.                                                                             | 23/06/2026 | 26/06/2026      | Hugo Documentation, GitHub Repository |
-| Wednesday | - Create README.md for the repository to describe the project on GitHub.<br>- Review the AWS cost control plan before deploying resources.<br>- Complete the learning content in Module 2.<br>- Take notes on important knowledge from Module 2.                                                                                                                    | 24/06/2026 | 26/06/2026      | GitHub, Module 2                      |
-| Thursday  | - Prepare technical documentation for the AWS project.<br>- Write initial documents such as requirements, architecture, data model, API endpoints, cost control, and cleanup checklist.                                                                                                                                                                             | 25/06/2026 | 26/06/2026      | AWS Documentation, Project Repository |
-| Friday    | - Prepare for the AWS implementation phase in the following week.<br>- Define the implementation order of AWS services: AWS Budget, IAM, Cognito, DynamoDB, Lambda, API Gateway, SNS, CloudWatch, and Bedrock.<br>- Summarize the results of Week 2, complete the Week 2 Worklog, and prepare the plan for Week 3.                                                  | 26/06/2026 | 26/06/2026      | AWS Console, GitHub Repository        |
+| Day | Tasks | Start date | Completion date | References |
+|---|---|---|---|---|
+| Monday | - Learn about IAM Users, IAM Groups, IAM Roles, and IAM Policies.<br>- Learn the principle of least privilege.<br>- Practice verifying AWS identity using the AWS CLI.<br>- Agree that access keys must not be shared among team members. | 22/06/2026 | 22/06/2026 | [AWS IAM](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| Tuesday | - Learn about VPCs, subnets, route tables, Internet Gateways, NAT Gateways, and Security Groups.<br>- Analyze why the CampusMeet MVP does not require a custom VPC or NAT Gateway.<br>- Learn about Amazon EC2 and the cost of continuously running resources. | 23/06/2026 | 23/06/2026 | [Amazon VPC and EC2](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| Wednesday | - Learn about Amazon S3, buckets, objects, Block Public Access, encryption, and lifecycle policies.<br>- Learn about Amazon RDS and Amazon DynamoDB.<br>- Compare relational databases and NoSQL databases based on access patterns. | 24/06/2026 | 24/06/2026 | [Explore AWS Services](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| Thursday | - Build the CampusMeet monorepo structure, including `apps`, `services`, `packages`, `infra`, `scripts`, and `docs`.<br>- Select React and TypeScript for the frontend and Node.js with TypeScript for the backend.<br>- Prepare shared types and the API contract. | 25/06/2026 | 25/06/2026 | [CampusMeet Repository](https://github.com/Ngct253/CampusMeet) |
+| Friday | - Review the Cognito authentication foundation.<br>- Check protected routes, the API client, and the `/health` endpoint.<br>- Learn about GitHub Actions, AWS SAM, and AWS CloudFormation.<br>- Complete the Week 2 Worklog. | 26/06/2026 | 26/06/2026 | [CampusMeet API Contract](https://github.com/Ngct253/CampusMeet/blob/main/docs/api-contract.md)<br>[AWS SAM](https://docs.aws.amazon.com/serverless-application-model/) |
 
-## Results achieved in Week 2
+## Week 2 results
 
-* Finalized the official project idea and scope.
-* Identified the AWS services that will be used in the system.
-* Completed the Proposal in both Vietnamese and English.
-* Added the architecture overview image to the Proposal section.
-* Fixed interface and sidebar issues on the report website.
-* Further standardized the bilingual structure of the website.
-* Created README.md to describe the project on GitHub.
-* Completed the learning content in Module 2.
-* Prepared initial technical documentation for the AWS project.
-* Built an AWS implementation plan for the following week.
+- Understood the roles of IAM Users, Groups, Roles, and Policies.
+- Understood the principle of least privilege and the importance of not sharing credentials.
+- Learned the basic components of Amazon VPC.
+- Understood the differences between Amazon EC2 and a serverless architecture.
+- Understood how Amazon S3 stores and protects data.
+- Distinguished between Amazon RDS and Amazon DynamoDB at a basic level.
+- Built the monorepo structure for CampusMeet.
+- Defined the boundaries among the frontend, backend, shared package, and infrastructure.
+- Reviewed the Cognito authentication foundation and the API health check.
+- Established an initial foundation for continuous integration and Infrastructure as Code.
 
-## Evidence for Week 2
+## Challenges encountered
 
-### 1. Updated Proposal
-
-![Proposal](/FCAJ---Workshop--aws/images/1-Worklog/week2/proposal.png)
-
-### 2. Hugo Website Running Locally
-
-![Hugo Local Server](/FCAJ---Workshop--aws/images/1-Worklog/week2/hugo_local.png)
-
-### 3. Updated GitHub Repository
-
-![GitHub Repository](/FCAJ---Workshop--aws/images/1-Worklog/week2/github_repo.png)
-
-### 4. Completed Module 2
-
-![Module 2](/FCAJ---Workshop--aws/images/1-Worklog/week2/module-2.png)
-
-## Difficulties encountered
-
-* The old Hugo theme caused errors when running with the newer Hugo version.
-* The English sidebar was not fully displayed because some `_index.en.md` files were missing.
-* Image paths needed to be checked carefully to ensure that evidence images were displayed correctly.
-* AWS cost control needed to be considered carefully before deploying real AWS resources.
+- Multiple team members may modify the same shared or infrastructure files.
+- It is easy to confuse the existence of a template with the successful deployment of actual AWS resources.
+- The team needs to standardize folder names, data types, and API contracts.
+- Credentials must be carefully managed when working on personal computers.
+- The DynamoDB repositories and real business APIs are not yet fully implemented.
 
 ## Solutions
 
-* Fixed the Hugo theme template files to make the website run more stably.
-* Created additional `_index.en.md` files for the missing English sections.
-* Checked the image folder structure inside `static/images`.
-* Prepared the cost control document and cleanup checklist before creating AWS resources.
+- Agree on the repository structure before implementing individual features.
+- Use shared contracts instead of copying interfaces between the frontend and backend.
+- Confirm that a feature is operational only when source code, tests, deployment outputs, and logs are available.
+- Each team member should use a separate AWS profile.
+- Do not commit secrets or access keys stored in `.env` files.
+- All infrastructure changes must be reviewed before deployment.
 
-## Plan for next week
+## Plan for the following week
 
-* Start deploying the foundational AWS services.
-* Configure IAM user and required access permissions.
-* Create Amazon Cognito for user management.
-* Design and create DynamoDB tables.
-* Prepare Lambda functions for groups, meetings, minutes, and tasks.
-* Continue recording implementation evidence for the Workshop section.
+- Analyze Group, Membership, and Invitation features.
+- Define the Member and Administrator roles.
+- Design the authorization boundary.
+- Study DynamoDB, CloudFront, and CloudWatch in greater depth.
+- Design the `collaboration` table and its access patterns.
+- Prepare tests for rejecting unauthorized cross-group access.
