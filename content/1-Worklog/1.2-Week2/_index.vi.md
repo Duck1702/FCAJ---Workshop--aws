@@ -6,68 +6,53 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Hoàn thiện Proposal, cấu trúc website và học Module 2
+# TUẦN 2: XÂY DỰNG NỀN TẢNG AWS VÀ CẤU TRÚC CAMPUSMEET
 
 ## Các công việc cần triển khai trong tuần này
 
-| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                        |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------- |
-| 2   | - Chốt ý tưởng project: CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS.<br>- Xác định phạm vi: group, meeting, minutes, task, reminder, transcription và grounded AI.<br>- Xác định các dịch vụ AWS serverless mục tiêu trong proposal. | 22/06/2026   | 26/06/2026      | AWS Documentation, FCAJ Requirement   |
-| 3   | - Hoàn thiện nội dung Proposal tiếng Việt và tiếng Anh.<br>- Thêm ảnh kiến trúc tổng quan của hệ thống vào phần Proposal.<br>- Sửa lỗi menu, header và sidebar cho website báo cáo.<br>- Chuẩn hóa cấu trúc song ngữ cho các mục tiếng Việt và tiếng Anh.                                                                                | 23/06/2026   | 26/06/2026      | Hugo Documentation, GitHub Repository |
-| 4   | - Tạo README.md cho repository để mô tả project trên GitHub.<br>- Kiểm tra lại kế hoạch kiểm soát chi phí AWS trước khi triển khai tài nguyên.<br>- Hoàn thành nội dung học tập Module 2.<br>- Ghi chú các kiến thức quan trọng trong Module 2.                                                                                          | 24/06/2026   | 26/06/2026      | GitHub, Module 2                      |
-| 5   | - Chuẩn bị nội dung tài liệu kỹ thuật cho project AWS.<br>- Viết các tài liệu ban đầu như requirements, architecture, data model, API endpoints, cost control và cleanup checklist.                                                                                                                                                      | 25/06/2026   | 26/06/2026      | AWS Documentation, Project Repository |
-| 6   | - Chuẩn bị cho giai đoạn triển khai AWS ở tuần tiếp theo.<br>- Xác định thứ tự triển khai các dịch vụ: AWS Budget, IAM, Cognito, DynamoDB, Lambda, API Gateway, SNS, CloudWatch và Bedrock.<br>- Tổng hợp kết quả tuần 2, hoàn thiện Worklog Tuần 2 và lập kế hoạch cho tuần 3.                                                          | 26/06/2026   | 26/06/2026      | AWS Console, GitHub Repository        |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|---|---|---|---|---|
+| 2 | - Tìm hiểu IAM User, IAM Group, IAM Role và IAM Policy.<br>- Tìm hiểu nguyên tắc least privilege.<br>- Thực hành kiểm tra danh tính AWS bằng AWS CLI.<br>- Thống nhất không chia sẻ access key giữa các thành viên. | 22/06/2026 | 22/06/2026 | [AWS IAM](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 3 | - Tìm hiểu VPC, subnet, route table, Internet Gateway, NAT Gateway và Security Group.<br>- Phân tích lý do CampusMeet MVP không cần tự xây dựng VPC hoặc NAT Gateway.<br>- Tìm hiểu EC2 và chi phí tài nguyên chạy liên tục. | 23/06/2026 | 23/06/2026 | [Amazon VPC và EC2](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 4 | - Tìm hiểu Amazon S3, bucket, object, Block Public Access, encryption và lifecycle.<br>- Tìm hiểu Amazon RDS và DynamoDB.<br>- So sánh database quan hệ với NoSQL theo access pattern. | 24/06/2026 | 24/06/2026 | [Khám phá dịch vụ AWS](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 5 | - Xây dựng cấu trúc monorepo CampusMeet gồm `apps`, `services`, `packages`, `infra`, `scripts` và `docs`.<br>- Xác định frontend React/TypeScript và backend Node.js/TypeScript.<br>- Chuẩn bị shared types và API contract. | 25/06/2026 | 25/06/2026 | [CampusMeet Repository](https://github.com/Ngct253/CampusMeet) |
+| 6 | - Rà soát nền tảng Cognito authentication.<br>- Kiểm tra protected routes, API client và endpoint `/health`.<br>- Tìm hiểu GitHub Actions, AWS SAM và CloudFormation.<br>- Hoàn thành Worklog tuần 2. | 26/06/2026 | 26/06/2026 | [CampusMeet API Contract](https://github.com/Ngct253/CampusMeet/blob/main/docs/api-contract.md)<br>[AWS SAM](https://docs.aws.amazon.com/serverless-application-model/) |
 
 ## Kết quả đạt được tuần 2
 
-* Đã chốt được ý tưởng và phạm vi chính thức của project.
-* Đã xác định các dịch vụ AWS sẽ sử dụng trong hệ thống.
-* Hoàn thiện Proposal bằng tiếng Việt và tiếng Anh.
-* Thêm ảnh kiến trúc tổng quan vào phần Proposal.
-* Sửa các lỗi giao diện và sidebar của website báo cáo.
-* Chuẩn hóa thêm cấu trúc song ngữ cho website.
-* Tạo README.md để mô tả project trên GitHub.
-* Hoàn thành nội dung học tập Module 2.
-* Chuẩn bị các tài liệu kỹ thuật ban đầu cho project AWS.
-* Xây dựng được kế hoạch triển khai AWS cho tuần tiếp theo.
-
-## Minh chứng tuần 2
-
-### 1. Proposal đã được cập nhật
-
-![Proposal](/FCAJ---Workshop--aws/images/1-Worklog/week2/proposal.png)
-
-### 2. Website Hugo chạy local
-
-![Hugo Local Server](/FCAJ---Workshop--aws/images/1-Worklog/week2/hugo_local.png)
-
-### 3. GitHub repository đã được cập nhật
-
-![GitHub Repository](/FCAJ---Workshop--aws/images/1-Worklog/week2/github_repo.png)
-
-### 4. Hoàn thành Module 2
-
-![Module 2](/FCAJ---Workshop--aws/images/1-Worklog/week2/module-2.png)
+- Hiểu vai trò của IAM User, Group, Role và Policy.
+- Hiểu nguyên tắc least privilege và không sử dụng credential dùng chung.
+- Nắm được các thành phần cơ bản của Amazon VPC.
+- Hiểu sự khác nhau giữa EC2 và kiến trúc serverless.
+- Hiểu cách S3 lưu trữ và bảo vệ dữ liệu.
+- Phân biệt RDS và DynamoDB ở mức cơ bản.
+- Xây dựng được cấu trúc monorepo cho CampusMeet.
+- Xác định ranh giới frontend, backend, shared package và infrastructure.
+- Kiểm tra được nền tảng Cognito authentication và API health check.
+- Có nền tảng CI và Infrastructure as Code bước đầu.
 
 ## Khó khăn gặp phải
 
-* Theme Hugo cũ phát sinh lỗi khi chạy với phiên bản Hugo mới.
-* Sidebar tiếng Anh chưa hiển thị đầy đủ do thiếu một số file `_index.en.md`.
-* Cần kiểm tra kỹ đường dẫn ảnh để ảnh minh chứng hiển thị đúng.
-* Cần chú ý kiểm soát chi phí trước khi triển khai tài nguyên AWS thật.
+- Nhiều thành viên có thể sửa cùng các file shared hoặc infrastructure.
+- Dễ nhầm giữa template tồn tại và tài nguyên đã triển khai thành công.
+- Cần thống nhất tên thư mục, kiểu dữ liệu và API contract.
+- Cần kiểm soát credential khi làm việc trên máy cá nhân.
+- Chưa có đầy đủ repository DynamoDB và API nghiệp vụ thật.
 
 ## Hướng xử lý
 
-* Sửa các file template của Hugo theme để website chạy ổn định hơn.
-* Tạo thêm các file `_index.en.md` cho các mục tiếng Anh còn thiếu.
-* Kiểm tra lại cấu trúc thư mục ảnh trong `static/images`.
-* Chuẩn bị trước tài liệu cost control và cleanup checklist trước khi tạo tài nguyên AWS.
+- Thống nhất cấu trúc repository trước khi triển khai tính năng.
+- Dùng shared contract thay vì copy interface giữa frontend và backend.
+- Chỉ xác nhận chức năng đã hoạt động khi có code, test, output và log.
+- Mỗi thành viên dùng AWS profile riêng.
+- Không đưa secret hoặc access key vào `.env` được commit.
+- Mọi thay đổi infrastructure phải được review trước khi deploy.
 
 ## Kế hoạch tuần tiếp theo
 
-* Bắt đầu triển khai các dịch vụ AWS nền tảng.
-* Cấu hình IAM user và quyền truy cập cần thiết.
-* Tạo Amazon Cognito để quản lý người dùng.
-* Thiết kế và tạo các bảng DynamoDB.
-* Chuẩn bị Lambda functions cho giao dịch và ngân sách.
-* Tiếp tục ghi lại minh chứng triển khai cho phần Workshop.
+- Phân tích Group, Membership và Invitation.
+- Xác định vai trò Member và Admin.
+- Thiết kế authorization boundary.
+- Tìm hiểu sâu hơn về DynamoDB, CloudFront và CloudWatch.
+- Thiết kế bảng `collaboration` và các access pattern.
+- Chuẩn bị test từ chối truy cập chéo nhóm.
