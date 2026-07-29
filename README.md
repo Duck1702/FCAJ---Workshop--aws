@@ -5,9 +5,9 @@ The report is built using **Hugo** and follows the AWS Study Group workshop temp
 
 ## Project Title
 
-**CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS**
+CampusMeet – Meeting and Team Work Management System with Google Meet Integration
 
-Vietnamese title: **CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS**
+Vietnamese title: CampusMeet – Hệ thống quản lý cuộc họp và công việc nhóm tích hợp Google Meet trên nền tảng AWS Serverless
 
 ## Overview
 
