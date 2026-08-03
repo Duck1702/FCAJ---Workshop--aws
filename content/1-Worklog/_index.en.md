@@ -18,7 +18,7 @@ pre: " <b> 1. </b> "
 
 **Week 6:** [Security, Post-Meeting Workflows, and AI Data Sources](1.6-week6/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [AI Vertical Slice and Operations](1.7-week7/)
 
 **Week 8:** [Doing task H...](1.8-week8/)
 

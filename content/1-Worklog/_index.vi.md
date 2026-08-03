@@ -18,7 +18,7 @@ pre: " <b> 1. </b> "
 
 **Tuần 6:** [Bảo mật, luồng sau họp và nguồn dữ liệu AI](1.6-week6/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 7:** [AI Vertical slice và vận hành](1.7-week7/)
 
 **Tuần 8:** [Làm công việc H...](1.8-week8/)
 
