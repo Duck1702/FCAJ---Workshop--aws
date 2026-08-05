@@ -34,7 +34,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages.en]
 
-title = "CampusMeet — AI-Assisted Meeting and Collaboration Platform on AWS"
+title = "CampusMeet — Intelligent Meeting Management System on AWS"
 
 weight = 1
 
@@ -54,7 +54,7 @@ weight = 20
 
 [Languages.vi]
 
-title = "CampusMeet — Nền tảng quản lý cuộc họp và cộng tác có AI trên AWS"
+title = "CampusMeet — Hệ thống quản lý cuộc họp thông minh trên AWS"
 
 weight = 2
 
